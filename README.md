@@ -1,6 +1,6 @@
 # django_test
 
-source c:/Users/alias/work/django/venv/Scripts/activate
+source ./venv/Scripts/activate
 
 # Migrate
 
