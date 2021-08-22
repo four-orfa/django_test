@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block header%}
+<div class="container">
+  <div class="bg-light p-3 p-sm-5 my-4 rounded">
+    <h1 class="display-4">Todo List</h1>
+    <p class="lead">Make a TodoList and spend a productive day.</p>
+  </div>
+</div>
+{% endblock header %} {% block content %}
+<div class="container">
+  {% for item in object_list %}
+  <div class="alert alert-success" role="alert">
+    <p>{{ item.title }}</p>
+    <a href="#" class="btn btn-info btn-sm" tabindex="-1" role="button" aria-disabled="true"> Edit </a>
+    <a href="#" class="btn btn-success btn-sm" tabindex="-1" role="button" aria-disabled="true"> Delete </a>
+    <a href="#" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true"> Detail </a>
+  </div>
+  {%endfor %}
+</div>
+{%endblock content %}
